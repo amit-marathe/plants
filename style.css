@@ -1,0 +1,171 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+.main{
+    height: 100%;
+    width: 100%;
+    background-color: #dadada;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/*----------------------------------center-main->left-center and right-center------------------------------------*/
+.center-main{
+    height: 80%;
+    width: 80%;
+    background-color: rgba(245, 205, 153, 0.979);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+}
+
+.left-center{
+    height: 100%;
+    width: calc(50% - 125px);
+    background-color: rgba(108, 208, 245, 0.897);
+}
+
+.right-center{
+    height: 100%;
+    width: calc(50% +125px);
+    border-left: 250px solid rgba(108, 208, 245, 0.897);
+    border-bottom: 500px solid transparent;
+}
+/*------------------------overlay->left-overlay and right-overlay---------------------------------------*/
+.cn-overlay{
+    height: 80%;
+    width: 80%;
+    position: absolute;
+    display: flex;
+}
+/*---------------------------------------------left-overlay--------------------------------------*/
+.left-overlay{
+    height: 100%;
+    width: 50%;
+    position: relative;
+    color: #fff;
+}
+
+.left-overlay .navbar{
+    height: 10%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.left-overlay .navbar h3{
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.left-overlay .navbar h3 img{
+    height: 35px;
+    width: 40px;
+    filter: invert();
+}
+
+.left-overlay h1{
+    position: absolute;
+    left: 35%;
+    top: 25%;
+    font-size: 4rem;
+}
+
+.left-overlay h2{
+    position: absolute;
+    left: 35%;
+    top: 45%;
+    border: 2px solid #fff;
+    padding: 10px 15px;
+    border-radius: 25px;
+    font-size: 1.3rem;
+    font-weight: 400;
+    margin-left: 10px;
+}
+
+.left-overlay .img{
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    top: 58%;
+    left: 30%;
+    background-image: url(./images/img\ \(1\).png);
+    background-position: center;
+    background-size: cover;
+}
+/*-------------------------------------right-overlay-----------------------------------------------*/
+.right-overlay{
+    height: 100%;
+    width: 50%;
+    position: relative;
+}
+
+.right-overlay .navbar{
+    height: 10%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.right-overlay .navbar h3{
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-left: 30%;
+}
+
+.hamburger{
+    position: absolute;
+    right: 10%;
+    top: 2%;
+}
+
+.ham{
+    height: 3px;
+    width: 30px;
+    margin-top: 5px;
+    background-color: black;
+}
+
+.right-overlay h1{
+    font-size: 4.5rem;
+    position: absolute;
+    left: 37%;
+    top: 35%;
+}
+
+.right-overlay h2{
+    position: absolute;
+    left: 44%;
+    top: 55%;
+    font-size: 1.3rem;
+    border: 2px solid #fff;
+    padding: 10px 15px;
+    border-radius: 25px;
+    font-weight: 400;
+    background-color: #fff;
+    z-index: 99;
+}
+
+.right-overlay .img{
+    height: 300px;
+    width: 120px;
+    position: absolute;
+    left: 27%;
+    top: 39%;
+    background-image: url(./images/img2.png);
+    background-position: center;
+    background-size: cover;
+}
+/*------------------------------------------------------------------------------------------------------*/
